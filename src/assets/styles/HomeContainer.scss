@@ -1,0 +1,69 @@
+@import "./variables.scss";
+@import "./constant.scss";
+
+.home {
+    margin-top: 6rem;
+    margin: $lg-gap;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-size: 22px;
+      .content {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        .sub-title {
+          color:$first-color;
+          letter-spacing: 0.1rem;
+        }
+        .description {
+          color: $first-color;
+        }
+        button {
+          color:$secondary-color;
+          background-color: $first-color;
+          font-weight: bold;
+          padding: 1rem 3rem;
+          border-radius: 2rem;
+          border: solid 3px transparent;
+          background-image: linear-gradient(
+              rgba(255, 255, 255, 0),
+              rgba(255, 255, 255, 0)
+            ),
+            linear-gradient(101deg, $third-color, $first-color);
+          cursor: pointer;
+          
+        }
+      }
+      .image-container {
+        text-align: center;
+        position: relative;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .home {
+      padding: 1rem;
+      position: relative;
+      overflow-x: hidden;
+      margin-top: 1rem;
+      .container {
+        font-size: 16px;
+        grid-template-columns: 0.7fr;
+        .image-container {
+          position: absolute;
+          right: -10%;
+          top: 30%;
+          .image {
+            img {
+              height: 10rem;
+            }
+          }
+        }
+      }
+    }
+  }

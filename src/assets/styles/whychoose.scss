@@ -1,0 +1,80 @@
+@import "./constant";
+@import "./variables";
+.whycontainer{
+    height: fit-content;
+    padding: 10% $lg-gap 3% $lg-gap;
+}
+.why-choose-us{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.why-choose-us .why-choose-us-top {
+    height: 80px;
+    width: 100%;
+}
+
+.why-choose-us .why-choose-us-top .title {
+    color: $second-color;
+    font-size: 45px;
+    height: 60px;
+}
+.choose-us .why-choose-us-top .title {
+    font-weight: 700;
+    width: 100%;
+}
+.why-choose-us .why-choose-us-top .heading {
+    align-items: center;
+    display: flex;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 20px;
+    height: 20px;
+}
+.why-choose-us .why-choose-us-top .heading, .why-choose-us .why-choose-us-top .title {
+    font-weight: 700;
+    width: 100%;
+}
+
+.why-choose-us .why-choose-us-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: calc(100% - 80px);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.why-choose-us .why-choose-us-bottom .container {
+   
+    border: 1px solid $primary-color;
+    box-shadow: $shadow;
+    @include textGradient;
+    border-radius: 10px;
+    cursor: help;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    width: 100%;
+
+    &:hover {
+          width: 110%;
+          height: 140px;
+      }
+}
+
+.why-choose-us .why-choose-us-bottom .container .heading-container {
+    align-items: center;
+    display: flex;
+    height: -webkit-max-content;
+    height: max-content;
+    width: 100%
+}
+
+.why-choose-us .why-choose-us-bottom .container .description-container {
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+@import "./styles/variables.scss";
+@import "./styles/constant.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hello{
+       color: $primary-color;
+       @include flexCenter;
+}

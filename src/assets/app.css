@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hello {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=app.css.map */
